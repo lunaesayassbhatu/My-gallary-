@@ -1,0 +1,74 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  gap: 2rem;
+}
+
+.card {
+  width: 10rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: width 0.3s ease;
+}
+
+img {
+  height: 40rem;
+  width: 80rem;
+}
+
+.content {
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  color: rgb(136, 136, 136);
+}
+
+.content span {
+  display: none;
+  transition: 0.3s ease;
+}
+
+i {
+  font-size: 25px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 1.3rem;
+}
+
+.card:hover {
+  width: 55rem; /* Set a specific width here */
+  transition: width 0.3s ease;
+}
+
+.card:hover span {
+  display: inline;
+  font-size: 25px;
+  transition: 0.3s ease;
+  color: white;
+}
